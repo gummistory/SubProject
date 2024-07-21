@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>협성대학교 호텔관광경영학과</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+    // 이미지 슬라이드
+    $(document).ready(function(){
+        var slider = $('.bxslider').bxSlider({
+            speed: 1000,/* 전환 속도 */
+            pause: 5000,/* 정지 시간 */
+            minSlides: 1,/* 이미지 개수 (PC) */
+            maxSlides: 1,/* 이미지 개수 (PC) */
+            slideMargin: 10,
+            mode: "fade",
+            pager: true,/* 페이징 */
+            auto: true
+        });
+
+        // 버튼 클릭 이벤트 처리
+        $('.slide-1').on('click', function() {
+            slider.goToSlide(0);
+        });
+
+        $('.slide-2').on('click', function() {
+            slider.goToSlide(1);
+        });
+
+        $('.slide-3').on('click', function() {
+            slider.goToSlide(2);
+        });
+
+        $('.next').on('click', function() {
+            slider.goToNextSlide();
+        });
+    });
+    </script>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.auth-bar {
+    background-color: #001a33;
+    padding: 5px 0;
+}
+
+.auth-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav.navigation {
+    background-color: #004080;
+}
+
+nav.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.navigation ul li {
+    position: relative;
+}
+
+nav.navigation ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav.navigation ul li a:hover,
+nav.navigation ul li a:focus {
+    background-color: #0059b3;
+}
+
+nav.navigation ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color: #0059b3;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+nav.navigation ul li .submenu a {
+    padding: 10px;
+}
+
+nav.navigation ul li:hover .submenu {
+    display: block;
+}
+
+#slide-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notice-board, .pnu-focus, .quick-menu {
+    margin-bottom: 20px;
+}
+
+.notice-board ul, .pnu-focus ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notice-board ul li, .pnu-focus ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pnu-focus ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pnu-focus ul li {
+    width: 23%;
+    text-align: center;
+}
+
+.pnu-focus ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick-menu .quick-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-menu .quick-links a {
+    display: block;
+    width: 23%;
+    background-color: #004080;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.quick-menu .quick-links a:hover {
+    background-color: #003366;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="auth-bar">
+            <div class="auth-links">
+                <a href="#">메인화면</a>
+                <a href="#">로그인</a>
+                <a href="#">사이트맵</a>
+            </div>
+        </div>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="협성대학교 로고">
+            </div>
+            <div class="title">
+                호텔관광경영학과
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li class="nav-menu">
+                <a href="#">학과소개</a>
+                <div class="submenu">
+                    <a href="#">학과장 인사말</a>
+                    <a href="#">학과연혁</a>
+                    <a href="#">교육목표</a>
+                    <a href="#">교수진</a>
+                    <a href="#">관광컨벤션학이란</a>
+                    <a href="#">T&C MICE</a>
+                    <a href="#">졸업후진로</a>
+                </div>
+            </li>
+            <li class="nav-menu">
+                <a href="#">교육과정</a>
+                <div class="submenu">
+                    <a href="#">교과과정표</a>
+                    <a href="#">교과목소개</a>
+                </div>
+            </li>
+            <li class="nav-menu">
+                <a href="#">대학원</a>
+                <div class="submenu">
+                    <a href="#">교과과정표</a>
+                    <a href="#">교과목소개</a>
+                </div>
+            </li>
+            <li class="nav-menu">
+                <a href="#">공지사항</a>
+                <div class="submenu">
+                    <a href="#">학과공지사항</a>
+                    <a href="#">대학원공지사항</a>
+                    <a href="#">채용공고</a>
+                    <a href="#">장학안내</a>
+                    <a href="#">입학안내</a>
+                    <a href="#">학과갤러리</a>
+                </div>
+            </li>
+            <li class="nav-menu">
+                <a href="#">커뮤니티</a>
+                <div class="submenu">
+                    <a href="#">자유게시판</a>
+                    <a href="#">자료공유</a>
+                </div>
+            </li>
+            <li class="nav-menu">
+                <a href="#">학생활동</a>
+                <div class="submenu">
+                    <a href="#">학생회</a>
+                    <a href="#">동아리</a>
+                </div>
+            </li>
+            <li class="nav-menu">
+                <a href="#">참고사이트</a>
+                <div class="submenu">
+                    <a href="#">기관</a>
+                    <a href="#">연구</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- 메인 -->
+    <div id="slide-container">
+        <ul class="bxslider">
+            <li class="slide-box">
+                <img src="/images/temp_1620008144926100.jpg" height="480px" width="100%" alt="이미지1">
+            </li>
+            <li class="slide-box">
+                <img src="./images/test2.jpg" height="480px" width="100%" alt="이미지 2">
+            </li>
+            <li class="slide-box">
+                <img src="/images/test3.jpg" height="480px" width="100%" alt="이미지 3">
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="notice-board">
+            <h2>공지사항</h2>
+            <ul>
+                <li>2024학년도 여름계절·도약수업 개설강좌 확정 및 수강신청(대기순번제) 안내 - 2024-05-17</li>
+                <li>2024학년도 여름계절수업 교류 수학 안내(동의대, 서울시립대 차세대통신) - 2024-05-17</li>
+                <li>2024학년도 5월 도서관 이용교육 일정 안내 및 홍보 협조 요청 - 2024-05-17</li>
+                <li>[인권센터] 2024년 폭력예방교육 재학생(학부생 및 대학원생) 이수 협조 요청 - 2024-05-17</li>
+                <li>2024학년도 중앙동아리 및 우수 학·예술 동아리 지원 계획 알림 - 2024-05-08</li>
+            </ul>
+        </div>
+
+        <div class="pnu-focus">
+            <h2>PNU 포커스</h2>
+            <ul>
+                <li>
+                    <img src="./images/focus1.jpg" alt="포커스 이미지 1">
+                    <p>2024년 2월 한국관광...</p>
+                </li>
+                <li>
+                    <img src="./images/focus2.jpg" alt="포커스 이미지 2">
+                    <p>한국호텔관광학회 우...</p>
+                </li>
+                <li>
+                    <img src="./images/focus3.jpg" alt="포커스 이미지 3">
+                    <p>제 95차 한국관광학회...</p>
+                </li>
+                <li>
+                    <img src="./images/focus4.jpg" alt="포커스 이미지 4">
+                    <p>2023학년도 동계 해외...</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="quick-menu">
+            <h2>QUICK MENU</h2>
+            <div class="quick-links">
+                <a href="#">관광컨벤션학과 BK+</a>
+                <a href="#">경제통상대학</a>
+                <a href="#">참고사이트</a>
+                <a href="#">학생활동</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans';
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.auth-bar {
+    background-color: #f6f6f6;
+    padding: 5px 40px;
+    text-align: right;
+    font-size: 11px;
+    color: #9a9a9a;
+}
+
+
+.navigation {
+    z-index: 10;
+}
+
+
+
+.auth-links {
+    height: 13px;
+}
+
+.auth-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.top-bar {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px; /* 로고와 타이틀 사이의 간격 조정 */
+}
+nav {
+    background-color: #183d93;
+}
+
+.nav-menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #183d93;
+    width: 100%; /* 필요에 따라 너비 조정 */
+    left: 0; /* 부모 요소에 맞춰 위치 설정 */
+    top: 100%; /* 부모 요소 아래에 위치 */
+}
+
+.nav-menu:hover .submenu {
+    display: block;
+}
+
+nav ul {
+    display: grid; /* CSS 그리드 사용 */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 반응형 컬럼 설정 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #002266;
+}
+
+main {
+    background-color: #dfe6d1;
+    min-height: calc(100vh - 160px);
+    display: grid; /* CSS 그리드 사용 */
+    place-items: center; /* 아이템을 가운데 정렬 */
+    grid-template-columns: 1fr 1fr; /* 두 개의 동일한 너비 컬럼 */
+    gap: 20px; /* 각 컬럼 사이의 간격 설정 */
+}
+/* main imgae slider */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slide {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.slide-container {
+    z-index: 1;
+}
+
+
+
+
+
+.notice-board, .pnu-focus, .quick-menu {
+    margin-bottom: 20px;
+}
+
+.notice-board ul, .pnu-focus ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notice-board ul li, .pnu-focus ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.content {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.hsu-focus ul {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.hsu-focus ul li {
+    width: 23%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.hsu-focus ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/* 퀵메뉴  */
+
+.quick-menu .quick-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-menu .quick-links a {
+    display: block;
+    width: 23%;
+    background-color: #004080;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.quick-menu .quick-links a:hover {
+    background-color: #003366;
+}
